@@ -21,51 +21,47 @@ while fraca:
     senha = input('Insira uma senha forte de, no mínimo, 6 caractéres:\n')
     if len(senha) < 6:
         print('Senha não atingiu o número de caractéres necessários, tente novamente.')
+    elif not any(x.isdigit() for x in senha):
+        print('Senha não possui, pelo menos, um digito. Tente novamente.')
+    elif not any(x.isupper() for x in senha):
+        print('Senha não possui, pelo menos, uma letra maiúscula. Tente novamente.')
+    elif not any(x.islower() for x in senha):
+        print('Senha não possui, pelo menos, uma letra minuscula. Tente novamente.')
+    elif senha.find('!') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('@') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('#') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('$') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('%') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('^') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('&') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('*') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('(') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find(')') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('-') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
+    elif senha.find('+') >= 0:
+        print('Você tem uma senha forte!')
+        fraca = False
     else:
-        if not any(x.isdigit() for x in senha):
-            print('Senha não possui, pelo menos, um digito. Tente novamente.')
-        else:
-            if not any(x.isupper() for x in senha):
-                print('Senha não possui, pelo menos, uma letra maiúscula. Tente novamente.')
-            else:
-                if not any(x.islower() for x in senha):
-                    print('Senha não possui, pelo menos, uma letra minuscula. Tente novamente.')
-                else:
-                    if senha.find('!') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('@') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('#') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('$') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('%') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('^') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('&') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('*') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('(') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find(')') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('-') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    elif senha.find('+') >= 0:
-                        print('Você tem uma senha forte!')
-                        fraca = False
-                    else:
-                        print('Senha não possui, pelo menos, um caractére especial. Tente novamente.')
+        print('Senha não possui, pelo menos, um caractére especial. Tente novamente.')
