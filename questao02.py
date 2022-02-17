@@ -1,5 +1,5 @@
 """
-Quastão 02
+Questão 02
 Débora se inscreveu em uma rede social para se manter em contato com seus amigos.
 A página de cadastro exigia o preenchimento dos campos de nome e senha, porém a senha precisa ser forte.
 
