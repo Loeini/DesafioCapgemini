@@ -6,6 +6,14 @@ Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pare
 
 anagrama = input('Insira uma palavra:\n')
 
-teste = True
-
-while teste:
+a = 0
+list = []
+for i in anagrama:
+    for j in anagrama:
+        if i == j:
+            x = anagrama[anagrama.index(i)]
+            y = anagrama[anagrama.index(j)]
+            list = list + [x, y]
+            print(list)
+        else:
+            pass
